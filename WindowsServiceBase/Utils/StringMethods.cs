@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Keyrus.Services.Utils
+namespace Services.Utils
 {
     public static class StringMethods
     {

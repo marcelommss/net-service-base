@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Globalization;
 using System.Threading;
-using RobotFTP.Log;
-using Syngenta.Services.Managers;
+using Log;
+using Services.Managers;
 using Topshelf;
 
 namespace WindowsServiceBase
@@ -17,6 +17,11 @@ namespace WindowsServiceBase
             try
             {
                 Configuration();
+
+                Codility();
+
+                Console.ReadKey();
+
 
                 HostFactory.Run(x =>
                 {
@@ -48,6 +53,49 @@ namespace WindowsServiceBase
                     Console.ReadKey();
             }
         }
+
+        private static void Codility()
+        {
+            Console.WriteLine(solution(new int[] {4, -6000, 2, 200, 6, 6, 4 }).ToString());
+        }
+        public static int solution(int[] A)
+        {
+            int maxValue = 0;
+            int result = 0;
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (A[i] < maxValue)
+                    continue;
+                result = i;
+                maxValue = A[i];
+            }
+            return result;
+        }
+        //public static int solution(int[] A)
+        //{
+        //    int N = A.Length;
+        //    int result = -1000000000;
+        //    for (int i = 0; i < N; i++)
+        //        result = ((A[i] - 1 < result)) ? result : (A[i] - 1);
+        //    return result;
+        //}
+        //public static String solution(String s)
+        //{
+        //    char c = s[0];
+        //    if ___ {  // please fix condition
+        //        return "upper";
+        //    }
+        //    else if ___ {  // please fix condition
+        //        return "lower";
+        //    }
+        //    else if ___ {  // please fix condition
+        //        return "digit";
+        //    }
+        //    else
+        //    {
+        //        return "other";
+        //    }
+        //}
 
         private static void Configuration()
         {

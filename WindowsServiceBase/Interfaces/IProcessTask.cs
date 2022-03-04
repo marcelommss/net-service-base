@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Keyrus.Services.Interfaces
+namespace Services.Interfaces
 {
     public interface IProcessTask
     {

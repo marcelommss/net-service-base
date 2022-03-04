@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Keyrus.Services.Agents
+namespace Services.Agents
 {
     public abstract class AgentBase
     {

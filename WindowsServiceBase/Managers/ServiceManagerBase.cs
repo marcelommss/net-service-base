@@ -1,11 +1,11 @@
-﻿using Keyrus.Services.Workers;
+﻿using Services.Workers;
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Keyrus.Services.Managers
+namespace Services.Managers
 {
     public abstract class ServiceManagerBase
     {

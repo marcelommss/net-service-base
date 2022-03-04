@@ -1,7 +1,7 @@
-﻿using Keyrus.Services.Agents;
+﻿using Services.Agents;
 using System.Threading;
 
-namespace Keyrus.Services.Workers
+namespace Services.Workers
 {
     public class WorkerThread
     {

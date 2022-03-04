@@ -1,10 +1,10 @@
-﻿using Keyrus.Services.Interfaces;
+﻿using Services.Interfaces;
 using System;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Keyrus.Services.Tasks
+namespace Services.Tasks
 {
     public abstract class ServiceBaseTask : IProcessTask, IDisposable
     {

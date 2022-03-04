@@ -1,4 +1,5 @@
-﻿using Keyrus.Services.Utils;
+﻿using Services.Models;
+using Services.Utils;
 using System;
 using System.Globalization;
 using System.IO;
@@ -6,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Keyrus.Services.Agents
+namespace Services.Agents
 {
     public class ConfigurationAgentBase: AgentBase
     {

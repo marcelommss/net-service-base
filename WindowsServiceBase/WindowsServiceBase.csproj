@@ -11,8 +11,4 @@
     <PackageReference Include="Topshelf.Log4Net" Version="4.3.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>

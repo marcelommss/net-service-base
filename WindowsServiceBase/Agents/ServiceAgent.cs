@@ -1,11 +1,11 @@
-﻿using Keyrus.Services.Interfaces;
+﻿using Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Syngenta.Services.Agents
+namespace Services.Agents
 {
     public class ServiceAgent : LogAgent
     {

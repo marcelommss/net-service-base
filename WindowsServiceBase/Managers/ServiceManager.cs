@@ -1,10 +1,10 @@
-﻿using Keyrus.Services.Managers;
-using Keyrus.Services.Workers;
-using Syngenta.Services.Agents;
+﻿using Services.Managers;
+using Services.Workers;
+using Services.Agents;
 using System;
 using System.Threading.Tasks;
 
-namespace Syngenta.Services.Managers
+namespace Services.Managers
 {
 
     public class ServiceManager : ServiceManagerBase

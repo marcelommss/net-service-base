@@ -1,10 +1,10 @@
-﻿using Keyrus.Services.Agents;
+﻿using Services.Agents;
 using log4net;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Syngenta.Services.Agents
+namespace Services.Agents
 {
     public class LogAgent : ConfigurationAgentBase
     {
