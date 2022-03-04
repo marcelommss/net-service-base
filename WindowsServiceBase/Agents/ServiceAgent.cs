@@ -1,4 +1,5 @@
 ﻿using Services.Interfaces;
+using Services.Tasks;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -24,6 +25,8 @@ namespace Services.Agents
         {
             try
             {
+                CreateTaskList();
+
                 if (!await ProcessTasks())
                 {
                     LogWarning("await ProcessTasks() error.");
@@ -40,6 +43,17 @@ namespace Services.Agents
             finally
             {
             }
+        }
+
+        /// <summary>
+        /// Create tasks list
+        /// </summary>
+        private void CreateTaskList()
+        {
+            Tasks = new List<IProcessTask>();
+
+            var exampleTask = new ExampleTask();
+            Tasks.Add(exampleTask);
         }
 
         /// <summary>
